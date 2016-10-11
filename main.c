@@ -61,6 +61,8 @@
 unsigned char const VectorDisplay [10] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 0x7F, 0x6F}; //display
 
 void main(void) {
+    
+    //configuration
 
     TRISB = 0x00; //portb as output
 
@@ -70,6 +72,10 @@ void main(void) {
     OSCCONbits.SCS = 0b00;
 
     ANSELA = 0b00000000;
+    
+    
+    
+    //code
 
 
     Lcd_Init(); //start lcd
